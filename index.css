@@ -1,32 +1,26 @@
-*{
+* {
   scroll-behavior: smooth;
 }
-main{
-  margin: 5rem 0 ;
+main {
+  margin: 5rem 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
- 
-
 }
-html{
+html {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
 }
-body{
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
-
-/* landing */
-#landing{
+#landing {
   width: 100%;
   height: 100vh;
   z-index: 100;
@@ -35,58 +29,50 @@ body{
   justify-content: center;
   background-position: center;
   background-size: cover;
-  background-image:
-   url(./assets/academia3.jpg), 
-   linear-gradient(to bottom , transparent,black);
-   background-blend-mode:saturation;
+  background-image: url(./assets/academia3.jpg),
+    linear-gradient(to bottom, transparent, black);
+  background-blend-mode: saturation;
 }
-
-#text-area-landing{
+#text-area-landing {
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
   user-select: none;
-  
-  
 }
-
-
-#landing-text{
+#landing-text {
   background-color: var(--black);
   width: 100%;
   height: 12rem;
   display: flex;
-  align-items: left ;
+  align-items: left;
   justify-content: center;
   padding: 0 20px;
   flex-direction: column;
   border-radius: 7px;
 }
-#landing-text #principal-text{
+#landing-text #principal-text {
   font-family: var(--logo-font);
   font-size: 5rem;
   color: var(--primary-color);
 }
-#landing-text #principal-text span{
-  margin: 0 10px 0 0 ;
+#landing-text #principal-text span {
+  margin: 0 10px 0 0;
   background-color: var(--primary-color);
   color: var(--black);
   font-weight: 700;
 }
-
-#landing-text #subtitle-text{
+#landing-text #subtitle-text {
   color: white;
   font-family: var(--text-font);
   font-weight: 600;
   font-size: 1.5rem;
 }
-
-#button-landing{
+#button-landing {
   padding: 20px 0;
 }
-#button-landing button{
+#button-landing button {
   height: 50px;
   width: 200px;
   font-size: 1.3rem;
@@ -101,82 +87,69 @@ body{
 
   backdrop-filter: blur(10px);
 }
-
-#button-landing button:hover{
+#button-landing button:hover {
   background-color: transparent;
   box-shadow: 0 0 5px 0.5px var(--primary-color);
 }
-
-/* about */
-#about{
+#about {
   height: 40rem;
   width: 80%;
   margin-bottom: 3rem;
 }
-#about-area{
+#about-area {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   height: 100%;
-  
   width: 100%;
 }
-#about #about-image img{
-  
+#about #about-image img {
   object-fit: cover;
   height: 100%;
 }
-#about-text{
+#about-text {
   font-family: var(--text-font);
   width: 50%;
   font-size: 1.2rem;
   color: grey;
 }
-#about-text h1{
+#about-text h1 {
   font-family: var(--title-font);
   font-size: 4rem;
   color: var(--black);
 }
-
-
-
-
-/* planos */
-#plans{
+#plans {
   width: 100%;
   height: 33rem;
-  
+
   justify-content: space-between;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-#plans-text{
+#plans-text {
   text-align: center;
   margin-bottom: 2rem;
 }
-#plans-text h1{
+#plans-text h1 {
   color: var(--black);
-  
+
   font-size: 4rem;
   font-family: var(--title-font);
 }
-#plans-text p{
+#plans-text p {
   color: grey;
   font-family: var(--text-font);
   font-weight: 500;
   font-size: 1.1rem;
 }
-
-
-#plans-area{
+#plans-area {
   width: 100%;
-  height:25rem;
+  height: 25rem;
   display: flex;
   flex-direction: row;
-
 }
-#plans-area .card-plan{
+#plans-area .card-plan {
   width: 100%;
   text-align: center;
   display: flex;
@@ -186,25 +159,22 @@ body{
   background: rgba(0, 0, 0, 0.711);
   background-blend-mode: darken;
 }
-#plans-area .gold{
+#plans-area .gold {
   background-image: url(./assets/academia6.jpg);
   background-position: center;
   background-size: cover;
 }
-#plans-area .platinum{
+#plans-area .platinum {
   background-image: url(./assets/academia8.jpg);
   background-position: center;
   background-size: cover;
 }
-#plans-area .blackleaf{
+#plans-area .blackleaf {
   background-image: url(./assets/academia3.jpg);
   background-position: center;
   background-size: cover;
-  
-  
 }
-.card-title{
-  
+.card-title {
   width: 200px;
   font-size: 3rem;
   font-family: var(--title-font);
@@ -213,33 +183,28 @@ body{
   color: var(--black);
 }
 
-.card-price{
-  
+.card-price {
   font-size: 1.6rem;
   height: auto;
   font-family: var(--text-font);
   color: white;
-  
 }
-.card-plan:hover .card-price{
+.card-plan:hover .card-price {
   color: white;
-  animation: appear ;
+  animation: appear;
 }
-.card-plan p{
+.card-plan p {
   font-size: 1.35rem;
   text-decoration: line-through;
   font-weight: 600;
   color: red;
 }
-#button-plans{
+#button-plans {
   margin-top: 2rem;
-
 }
-#button-plans a{
+#button-plans a {
   padding: 10px 30px;
-
   text-decoration: none;
-  
   font-size: 1.3rem;
   font-family: var(--text-font);
   font-weight: 600;
@@ -249,20 +214,12 @@ body{
   border-radius: 7px;
   cursor: pointer;
   transition: ease-in-out 0.4s;
-  
 }
-#button-plans a:hover{
-  
+#button-plans a:hover {
   background-color: black;
   box-shadow: 0 0 5px 0.5px var(--primary-color);
 }
-
-
-
-
-
-/* carroussel */
-.arrow-button{
+.arrow-button {
   margin: 10px;
   font-size: 1.3rem;
   padding: 10px;
@@ -273,58 +230,55 @@ body{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  
-  
 }
-#modalidades{
+#modalidades {
   margin-bottom: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-#modalidades-text{
+#modalidades-text {
   margin-bottom: 1rem;
   text-align: center;
 }
-#modalidades-text h1{
+#modalidades-text h1 {
   font-family: var(--title-font);
   color: var(--black);
   font-size: 3rem;
 }
-#modalidades-text p{
+#modalidades-text p {
   font-family: var(--text-font);
   font-weight: 500;
   font-size: 1.1rem;
   color: grey;
 }
-#modalidades-carrossel{
+#modalidades-carrossel {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-  /* dots */
-.dots-area{
+/* dots */
+.dots-area {
   width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
-.dots{
+.dots {
   height: 15px;
   width: 15px;
-  opacity: .3;
+  opacity: 0.3;
   border-radius: 100px;
   background-color: var(--black);
   transition: ease 0.4s;
-
 }
-.selected_dot{
+.selected_dot {
   opacity: 1;
 }
-.item{
+.item {
   transform: scale(0.8);
   opacity: 0.9;
   object-fit: cover;
@@ -333,15 +287,15 @@ body{
   flex-shrink: 0;
   filter: grayscale(1);
   height: 100%;
-  
+
   width: 400px;
 }
-.centerimage{
+.centerimage {
   filter: grayscale(0);
   transform: scale(1);
   opacity: 1;
 }
-#container-carrossel{
+#container-carrossel {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -350,34 +304,31 @@ body{
   margin-bottom: 2rem;
   align-items: center;
 }
-#parede-galeria{
+#parede-galeria {
   display: flex;
   width: 100%;
   height: 100%;
   overflow: hidden;
- 
 }
-#gallery{
+#gallery {
   display: flex;
   flex-direction: row;
 }
 
-.card-all h1{
+.card-all h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   z-index: 100;
   font-family: var(--title-font);
   padding: 10px;
   background-color: var(--black);
   display: none;
-  color: var(--primary-color); 
-
+  color: var(--primary-color);
 }
 
-
-.card-all p{
+.card-all p {
   position: absolute;
   z-index: 800;
   top: 50%;
@@ -386,28 +337,27 @@ body{
   padding: 10px;
   background-color: var(--black);
   display: none;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   color: white;
 }
 
-.card-selected h1{
+.card-selected h1 {
   display: block;
 }
-.card-selected:hover p{
+.card-selected:hover p {
   display: block;
-  
 }
-.card-selected:hover .centerimage{
-filter: blur(1px);
+.card-selected:hover .centerimage {
+  filter: blur(1px);
 }
-.card-selected:hover h1{
+.card-selected:hover h1 {
   display: none;
 }
-.card-all{
+.card-all {
   position: relative;
 }
 
-#more-button a{
+#more-button a {
   padding: 10px 30px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -419,43 +369,39 @@ filter: blur(1px);
   border-radius: 7px;
   cursor: pointer;
   transition: ease-in-out 0.4s;
-  
 }
-#more-button a:hover{
-  background-color: black
-  ;
+#more-button a:hover {
+  background-color: black;
 }
 /* beneficios */
-#beneficios{
-  
+#beneficios {
   width: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center
-  ;
+  justify-content: center;
   margin: 8rem 0;
 }
-#beneficios-text{
+#beneficios-text {
   font-size: 2rem;
   color: var(--black);
   text-align: center;
   font-family: var(--title-font);
   margin-bottom: 3rem;
 }
-#beneficios-text p{
+#beneficios-text p {
   font-family: var(--text-font);
   font-size: 1.1rem;
   color: grey;
   font-weight: 500;
 }
-#tabela-beneficios{
+#tabela-beneficios {
   width: 100%;
   height: 100%;
-  display:flex;
-  justify-content: center ;
+  display: flex;
+  justify-content: center;
 }
-table{
+table {
   border-collapse: collapse;
   width: 100%;
   height: 100%;
@@ -463,29 +409,28 @@ table{
   font-family: var(--text-font);
 }
 
-.plans-cell{
+.plans-cell {
   width: 150px;
   height: 80px;
   font-size: 1.5rem;
   color: green;
 }
-.no{
+.no {
   color: grey;
 }
-.beneficios{
+.beneficios {
   text-align: left;
   color: black;
   font-weight: 500;
   font-size: 1.2rem;
 }
-th{
+th {
   padding: 15px;
   font-size: 1.3rem;
-
 }
-
-table td,th{
-  border-bottom:1px solid grey
+table td,
+th {
+  border-bottom: 1px solid grey;
 }
 .custom-shape-divider-top-1704658484 svg {
   position: relative;
@@ -493,98 +438,85 @@ table td,th{
   width: 100%;
   height: 150px;
 }
-
-@media screen and (max-width:480px) {
-  #about-image{
+@media screen and (max-width: 480px) {
+  #about-image {
     display: none;
   }
-  #about-text{
+  #about-text {
     width: 100%;
-    font-size: .95rem;
+    font-size: 0.95rem;
     columns: 2;
     text-align: justify;
   }
-  .card-title{
+  .card-title {
     width: 100px;
     font-size: 1.7rem;
   }
-  .card-price{
+  .card-price {
     font-size: 1.5rem;
   }
- 
-  #text-area-landing{
+  #text-area-landing {
     align-items: center;
   }
-  #landing-text #principal-text{
+  #landing-text #principal-text {
     font-size: 3rem;
   }
-  #landing{
+  #landing {
     height: 90vh;
   }
-  #landing-text #subtitle-text{
-    display:none
+  #landing-text #subtitle-text {
+    display: none;
   }
-
-  table{
+  table {
     columns: 2;
     width: 80%;
   }
-  th{
+  th {
     padding: 0;
     font-size: 1rem;
     width: 100px;
   }
-  #beneficios{
+  #beneficios {
     width: 100%;
     margin: 1rem;
   }
-  .plans-cell{
+  .plans-cell {
     width: 100px;
-    
+
     font-size: 1.5rem;
   }
-  .beneficios{
+  .beneficios {
     font-size: 1rem;
     width: 100px;
   }
-  .custom-shape-divider-top-1704658484 svg{
+  .custom-shape-divider-top-1704658484 svg {
     display: none;
   }
 
-  #container-carrossel{
+  #container-carrossel {
     width: 50%;
     gap: 10px;
   }
-  #modalidades-carrossel{
+  #modalidades-carrossel {
     display: flex;
     justify-content: center;
   }
-  .item{
+  .item {
     width: 10px;
   }
-  .centerimage{
+  .centerimage {
     width: 100%;
   }
-  .dots-area{
+  .dots-area {
     width: 80%;
   }
-  #plans-area{
+  #plans-area {
     flex-direction: column;
   }
-  #plans-area .card-plan{
+  #plans-area .card-plan {
     height: 300px;
   }
-  #plans{
+  #plans {
     margin-bottom: 5rem;
   }
-  
 }
-
-
-
-
-
-
-
-
-
