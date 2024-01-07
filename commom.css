@@ -26,10 +26,89 @@ header {
   opacity: 1;
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 5rem;
   width: 100%;
   background-color: var(--black);
 }
+
+/* menu */
+.menu{
+  display: none;
+
+  padding: 10px;
+  
+  
+}
+.menu-button{
+  color: var(--primary-color);
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+.menu-down{
+  height: 12rem;
+  z-index: 800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  left: 0;
+  position: fixed;
+  top: -10rem;
+  background-color: var(--black);
+  box-shadow: 1px 1px 5px 0 var(--black)
+}
+.menu-down div{
+  padding: 10px;
+}
+.menu-down div ul li a{
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: var(--text-font);
+  font-weight: 500;
+  padding: 10px;
+  font-size: 1.3rem;
+
+}
+.menu-down li{
+  padding: 10px;
+}
+.menu-down ul{
+  list-style:none;
+}
+
+.menudesce{
+  animation: menudesce .5s ease-out forwards;
+}
+
+.menusobe{
+  animation: menusobe .5s ease-in forwards;
+}
+@keyframes menudesce {
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(15rem);
+  }
+}
+@keyframes menusobe {
+  0%{
+    transform: translateY(15rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+
+
+
 .logo {
   display: flex;
   flex-direction: row;
@@ -256,6 +335,7 @@ footer {
 }
 .warning{
   position: fixed;
+  width: 90%;
   bottom: 2rem;
   background-color: white;
   padding: 10px;
@@ -311,3 +391,72 @@ footer {
   right: 5px;
 }
 
+@media screen and (max-width:480px){
+  footer{
+    height: 10rem;
+    
+  }
+  .menu{
+    display: 
+    block;
+  }
+  footer *{
+    transition: 1s ease;
+  }
+  #social{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .header-buttons{
+    display: none;
+  }
+  #logo-name{
+    display: none;
+  }
+  #footer-top{
+    justify-content: space-around;
+    gap: 20px;
+  }
+
+
+  /* login-account */
+  .account{
+    flex-direction: column;
+    top: -30rem;
+    
+  }
+  .insideLeft{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+  .insideRight{
+    width: 100%;
+    padding: 10px 0 ;
+  }
+  @keyframes down{
+    0% {
+      transform: translateY(0rem);
+    }
+    100% {
+      transform: translateY(35rem);
+    }
+  }
+  @keyframes up{
+    0% {
+      transform: translateY(35rem)  ;
+    }
+    100% {
+      transform: translateY(0rem);
+    }
+  }
+  #login-area form input {
+    width: 125%;
+  }
+  #login-area{
+    padding: 20px;
+    width: 75%;
+    height: 100%;
+  }
+
+}

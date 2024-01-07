@@ -83,3 +83,12 @@ body{
     font-size: 1rem;
     font-weight: 600;
 }
+
+@media screen and (max-width:480px){
+    #unidades-wall{
+        grid-template-columns: 280px;
+    }
+    main{
+        margin: 0;
+    }
+}

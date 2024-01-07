@@ -102,8 +102,12 @@ BotaoAccount.addEventListener('click', ()=>{
 const botaoLogo = document.querySelector('.logo')
 
 botaoLogo.addEventListener('click' , ()=>{
-    window.location.replace('./index.html')
+    window.open('./index.html')
 })
+
+
+
+
 
 document.addEventListener('DOMContentLoaded' , ()=>{
     document.body.appendChild(warning)
@@ -135,8 +139,22 @@ SignInButton.addEventListener('click' , ()=>{
     window.open('./signIn.html')
 })
 
+const menuButton = document.querySelector('.menu')
+const menuDown = document.querySelector('.menu-down')
 
-
+menuButton.addEventListener('click' , ()=>{
+    menuButton.classList.toggle('desce')
+    if(menuButton.classList.contains('desce')){
+        menuDown.classList.remove('menusobe')
+        menuDown.classList.add('menudesce')
+        document.querySelector('.menu-button').innerHTML = '<ion-icon name="close-outline"></ion-icon>'
+    }
+    else{
+        document.querySelector('.menu-button').innerHTML = '<ion-icon name="menu-outline"></ion-icon>'
+        menuDown.classList.remove('menudesce')
+        menuDown.classList.add('menusobe')
+    }
+})
 
 
 
