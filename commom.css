@@ -1,0 +1,313 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+  --secondary-color: #64dfdf;
+  --primary-color: #80ffdb;
+  --black: #252525;
+  --purple: #6930c3;
+  --logo-font: "bebas-neue-by-fontfabric", sans-serif;
+  --title-font:'Oswald', sans-serif;
+  --text-font: "Quicksand", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+main{
+  width: 100%;
+}
+header {
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  width: 100%;
+  background-color: var(--black);
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 4rem;
+}
+#logo-name {
+  font-family: var(--logo-font);
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+#logo-name span {
+  font-weight: 700;
+}
+header .header-buttons a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-family: var(--text-font);
+  padding: 35px;
+  font-size: 1.1rem;
+  transition: 0.4s ease;
+}
+header .header-buttons a:hover {
+  filter: drop-shadow(0 0 5px var(--primary-color));
+}
+.buttons {
+  width: 100%;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+#user-area {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  font-size: 3rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.account {
+  height: 15rem;
+  z-index: 998;
+  width: 100%;
+  background-color: red;
+  cursor: initial;
+  position: fixed;
+  right: 0;
+  top: -25rem;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 10px 8px 0 rgba(0, 0, 0, 0.177);
+}
+.down {
+  animation: down forwards 0.8s ease-in-out;
+}
+@keyframes down {
+  0% {
+    transform: translateY(0rem);
+  }
+  100% {
+    transform: translateY(30rem);
+  }
+}
+
+.up {
+  animation: up forwards 0.8s ease-in-out;
+}
+@keyframes up {
+  0% {
+    transform: translateY(30rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* footer */
+
+footer {
+  font-family: var(--text-font);
+  color: white;
+  background-color: var(--black);
+  width: 96%;
+  height: 8rem;
+  display: flex;
+  padding: 5px 2%;
+  gap: 10px;
+  flex-direction: column;
+  user-select: none;
+}
+#footer-top {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#social {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+#social p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  user-select: all;
+}
+#area-do-franqueado {
+  padding: 10px;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+
+
+/* login */
+
+.insideLeft {
+  background-color: var(--secondary-color);
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#login-area {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#login-area h1 {
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--black);
+}
+#login-area form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+#login-area form input {
+  height: 35px;
+  width: 440px;
+  padding: 0 20px;
+  outline: none;
+  border-radius: 40px;
+  border: 1px solid var(--primary-color);
+}
+#login-area button {
+  background-color: white;
+  border: transparent;
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--title-font);
+  transition: 0.4s ease-in-out;
+}
+#login-area button:hover {
+  background-color: rgb(244, 244, 244);
+}
+#recover-password-button {
+  width: 100%;
+  text-align: right;
+  text-decoration: underline;
+  color: var(--black);
+  font-family: var(--text-font);
+}
+
+.insideRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252525;
+}
+#signIn-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+#signIn-area h1 {
+  font-family: var(--title-font);
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-weight: 400;
+}
+#signIn-area button {
+  height: 50px;
+  background-color: white;
+  width: 200px;
+  border: transparent;
+  border-radius: 999px;
+  font-size: 1.8rem;
+  text-align: center;
+  cursor: pointer;
+  font-family: var(--title-font);
+  transition: 0.4s ease-in-out;
+}
+.warning{
+  position: fixed;
+  bottom: 2rem;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 7px;
+  border: 1px solid var(--black);
+  z-index: 999;
+}
+.warning-div {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.leftwarning {
+  color: red;
+
+  font-size: 2rem;
+  animation: pulse 1s infinite ease-in-out;
+  text-align: center;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.rightwarning {
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: black;
+}
+.CloseWarning {
+  z-index: 999;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+

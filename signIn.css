@@ -1,0 +1,111 @@
+main{
+    margin-top: 5rem;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    background-image: url(./assets/academia5.jpg);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: saturation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}  
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+#signIn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+    padding: 2rem;
+    width: 35rem;
+    background-color: #252525a1;
+    backdrop-filter: blur(3px);
+    border-radius: 7px;
+    border: 1px solid white;
+    
+}
+#signIn-area-page{
+    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#signIn-area-page form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+
+}
+#signIn-area-page h1{
+    color: var(--primary-color);
+    font-family: var(--title-font);
+    font-size: 3rem;
+}
+#signIn-area-page form input{
+    height: 35px;
+    width: 70%;
+    outline: none;
+    background-color: white;
+    border: 2px solid var(--black);
+    border-radius: 7px;
+    padding: 0 10px;
+    
+    transition: all 0.3s ease;
+
+}
+
+#signIn-area-page form input::-webkit-input-placeholder{
+    font-size: 0.9rem;
+    transition: 0.3 all ease;
+}
+#signIn-area-page form input:focus::-webkit-input-placeholder{
+    color: rgba(255, 255, 255, 0.784);
+}
+#signIn-area-page form input:focus{
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--primary-color);
+}
+
+#signIn-area-page form select{
+    width: 70%;
+    height: 35px;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    
+    padding: 0 10px;
+}
+#signIn-area-page form select option{
+    font-size: 1.08rem;
+}
+
+#button-signIn-form{
+    height: 45px;
+    width: 40%;
+    border-radius: 7px;
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+    color: white;
+    font-family: var(--text-font);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s all ease;
+}
+#button-signIn-form:hover{
+    background-color: white;
+    color: var(--black);
+}

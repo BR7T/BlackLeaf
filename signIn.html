@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlackLeaf</title>
+    <link rel="icon" href="./assets/Logo-BlackLeaf-Ciano.svg" type="jpeg">
+    <link rel="stylesheet" href="https://use.typekit.net/gin6lzg.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="signIn.css" />
+    <link rel="stylesheet" href="commom.css" />
+  </head>
+  <body>
+    <nav class="account">
+      <div class="insideLeft">
+          <div id="login-area">
+              <h1>
+                  Login
+              </h1>
+              <div id="form-login">
+                  <form>
+                      <input type="email" placeholder="Email">
+                      <input type="password" placeholder="Senha">
+                  </form>
+                  
+              </div>
+              <a href="#" id="recover-password-button">Esqueceu a senha?</a>
+              <button id="button-login">Entrar</button>
+          </div>
+      </div>
+      <div class="insideRight">
+          <div id="signIn-area">
+              <h1>Ainda não é aluno?</h1>
+              <button id="SignInButton">Clique aqui</button>
+          </div>
+
+      </div>
+  </nav>
+    <header>
+      
+      <div class="buttons">
+      <div class="logo" target="_self">
+        <img src="./assets/Logo-BlackLeaf-Ciano.svg" alt="" />
+        <div id="logo-name">
+          <p><span>Black</span>Leaf</p>
+        </div>
+      </div>
+
+      <div class="header-buttons">
+        <a href="./index.html">Sobre</a>
+        <a href="./index.html">Planos</a>
+        <a href="./unidades.html">Unidades</a>
+        <a href="./index.html">Modalidades</a>
+        
+      </div>
+      <div id="user-area"><ion-icon name="person-circle-outline"></ion-icon></div>
+      </div>
+    </header>
+<body>
+
+    <main>
+
+    <div id='signIn'>
+        <div id="signIn-area-page">
+            <h1>Cadastro</h1>
+            <form>
+                <input type="text" placeholder="Nome" autocomplete="off" >
+                <input type="tel" autocomplete="off" placeholder="Telefone" id="telefone-signIn" onblur="mascaraTelefone()" maxlength="11">
+                <input type="email" autocomplete="off" placeholder="Email">
+                <input type="password" placeholder="Senha">
+
+                <select name="Unidades" id="unidades-select">
+                  <option value="0" hidden selected>Selecione sua unidade</option>
+                   
+                    <option value="1">São Paulo</option>
+                    <option value="2">Campinas</option>
+                    <option value="3">Santos</option>
+                    <option value="4">Indaiatuba</option>
+                    <option value="6">Hortolândia</option>
+                    <option value="7">Guarulhos</option>
+                    <option value="8">Itu</option>
+                    <option value="5">Jundiai - Em breve</option>
+                </select>
+
+            </form>
+            <input type="button" value="Cadastrar-se" id="button-signIn-form">
+        </div>
+    </div>
+
+
+
+    </main>
+    <footer>
+
+        <div id="footer-top">
+  
+          <div class="logo">
+            <img src="./assets/Logo-BlackLeaf-Ciano.svg" alt="" />
+            <div id="logo-name">
+              <p><span>Black</span>Leaf</p>
+            </div>
+          </div>
+  
+          <div id="social">
+            <p>
+              <ion-icon name="mail"></ion-icon>
+              contato@blackleaf.com
+            </p>
+            <p>
+              <ion-icon name="logo-instagram"></ion-icon>
+              @blackleaf
+            </p>
+            <p>
+              <ion-icon name="call"></ion-icon>
+              (19)98854-6612
+            </p>
+          </div>
+          
+          
+        </div>
+        <hr>
+        <div id="footer-bottom">
+          <p>Todos os direitos Reservados | BlackLeaf ® - 2024 - Feito por Victor Buratini</p>
+        </div>
+        
+        
+      </footer>
+
+
+      <script src="script.js"></script>
+      <script src="scriptSignIn.js"></script>
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+  </html>
+  
+</html>

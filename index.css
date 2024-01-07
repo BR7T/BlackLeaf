@@ -1,0 +1,491 @@
+*{
+  scroll-behavior: smooth;
+}
+main{
+  margin: 5rem 0 ;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+html{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* landing */
+#landing{
+  width: 100%;
+  height: 100vh;
+  z-index: -999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-image:
+   url(./assets/academia3.jpg), 
+   linear-gradient(to bottom , transparent,black);
+   background-blend-mode:saturation;
+}
+
+#text-area-landing{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  user-select: none;
+  
+  
+}
+
+
+#landing-text{
+  background-color: var(--black);
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  align-items: left ;
+  justify-content: center;
+  padding: 0 20px;
+  flex-direction: column;
+  border-radius: 7px;
+}
+#landing-text #principal-text{
+  font-family: var(--logo-font);
+  font-size: 5rem;
+  color: var(--primary-color);
+}
+#landing-text #principal-text span{
+  margin: 0 10px;
+  background-color: var(--primary-color);
+  color: var(--black);
+  font-weight: 700;
+}
+
+#landing-text #subtitle-text{
+  color: white;
+  font-family: var(--text-font);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+#button-landing{
+  padding: 20px 0;
+}
+#button-landing button{
+  height: 50px;
+  width: 200px;
+  font-size: 1.3rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+  border: 2px solid var(--primary-color);
+  background-color: var(--black);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+
+  backdrop-filter: blur(10px);
+}
+
+#button-landing button:hover{
+  background-color: transparent;
+  box-shadow: 0 0 5px 0.5px var(--primary-color);
+}
+
+/* about */
+#about{
+  height: 40rem;
+  width: 80%;
+  margin-bottom: 3rem;
+}
+#about-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  
+  width: 100%;
+}
+#about #about-image img{
+  
+  object-fit: cover;
+  height: 100%;
+}
+#about-text{
+  font-family: var(--text-font);
+  width: 50%;
+  font-size: 1.2rem;
+  color: grey;
+}
+#about-text h1{
+  font-family: var(--title-font);
+  font-size: 4rem;
+  color: var(--black);
+}
+
+
+
+
+/* planos */
+#plans{
+  width: 100%;
+  height: 33rem;
+  
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#plans-text{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+#plans-text h1{
+  color: var(--black);
+  
+  font-size: 4rem;
+  font-family: var(--title-font);
+}
+#plans-text p{
+  color: grey;
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+#plans-area{
+  width: 100%;
+  height:25rem;
+  display: flex;
+  flex-direction: row;
+
+}
+#plans-area .card-plan{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.711);
+  background-blend-mode: darken;
+}
+#plans-area .gold{
+  background-image: url(./assets/academia6.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#plans-area .platinum{
+  background-image: url(./assets/academia8.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#plans-area .blackleaf{
+  background-image: url(./assets/academia3.jpg);
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+.card-title{
+  
+  width: 200px;
+  font-size: 3rem;
+  font-family: var(--title-font);
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: var(--black);
+}
+
+.card-price{
+  
+  font-size: 1.6rem;
+  height: auto;
+  font-family: var(--text-font);
+  color: white;
+  
+}
+.card-plan:hover .card-price{
+  color: white;
+  animation: appear ;
+}
+.card-plan p{
+  font-size: 1.35rem;
+  text-decoration: line-through;
+  font-weight: 600;
+  color: red;
+}
+#button-plans{
+  margin-top: 2rem;
+
+}
+#button-plans a{
+  padding: 10px 30px;
+
+  text-decoration: none;
+  
+  font-size: 1.3rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+  border: 2px solid var(--primary-color);
+  background-color: var(--black);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+  
+}
+#button-plans a:hover{
+  
+  background-color: black;
+  box-shadow: 0 0 5px 0.5px var(--primary-color);
+}
+
+
+
+
+
+/* carroussel */
+.arrow-button{
+  margin: 10px;
+  font-size: 1.3rem;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  
+  
+}
+#modalidades{
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#modalidades-text{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+#modalidades-text h1{
+  font-family: var(--title-font);
+  color: var(--black);
+  font-size: 3rem;
+}
+#modalidades-text p{
+  font-family: var(--text-font);
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: grey;
+}
+#modalidades-carrossel{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+  /* dots */
+.dots-area{
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.dots{
+  height: 15px;
+  width: 15px;
+  opacity: .3;
+  border-radius: 100px;
+  background-color: var(--black);
+  transition: ease 0.4s;
+
+}
+.selected_dot{
+  opacity: 1;
+}
+.item{
+  transform: scale(0.8);
+  opacity: 0.9;
+  object-fit: cover;
+  transition: 450ms ease-in-out;
+  border-radius: 10px;
+  flex-shrink: 0;
+  filter: grayscale(1);
+  height: 100%;
+  
+  width: 400px;
+}
+.centerimage{
+  filter: grayscale(0);
+  transform: scale(1);
+  opacity: 1;
+}
+#container-carrossel{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: 400px;
+  width: 800px;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+#parede-galeria{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+ 
+}
+#gallery{
+  display: flex;
+  flex-direction: row;
+}
+
+.card-all h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  font-family: var(--title-font);
+  padding: 10px;
+  background-color: var(--black);
+  display: none;
+  color: var(--primary-color); 
+
+}
+
+
+.card-all p{
+  position: absolute;
+  z-index: 800;
+  top: 50%;
+  left: 50%;
+  font-family: var(--text-font);
+  padding: 10px;
+  background-color: var(--black);
+  display: none;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+
+.card-selected h1{
+  display: block;
+}
+.card-selected:hover p{
+  display: block;
+  
+}
+.card-selected:hover .centerimage{
+filter: blur(1px);
+}
+.card-selected:hover h1{
+  display: none;
+}
+.card-all{
+  position: relative;
+}
+
+#more-button a{
+  padding: 10px 30px;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-family: var(--text-font);
+  font-weight: 600;
+  border: 2px solid var(--primary-color);
+  background-color: var(--black);
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+  
+}
+#more-button a:hover{
+  background-color: black
+  ;
+}
+/* beneficios */
+#beneficios{
+  
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem 0;
+}
+#beneficios-text{
+  font-size: 2rem;
+  color: var(--black);
+  text-align: center;
+  font-family: var(--title-font);
+  margin-bottom: 3rem;
+}
+#beneficios-text p{
+  font-family: var(--text-font);
+  font-size: 1.1rem;
+  color: grey;
+  font-weight: 500;
+}
+#tabela-beneficios{
+  width: 100%;
+  height: 100%;
+}
+table{
+  border-collapse: collapse;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: var(--text-font);
+}
+
+.plans-cell{
+  width: 150px;
+  height: 80px;
+  font-size: 1.5rem;
+  color: green;
+}
+.no{
+  color: grey;
+}
+.beneficios{
+  text-align: left;
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+th{
+  padding: 15px;
+  font-size: 1.3rem;
+
+}
+
+table td,th{
+  border-bottom:1px solid grey
+}
+
+
+
+
+
+
+
+
+
+
+
